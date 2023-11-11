@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Global css */
+* {
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  padding: 0 25px;
+  margin: 0 auto;
+}
+body {
+  font-family: "cairo" sans-serif;
+  margin: 0;
+}
+
+/* navbar */
+.btn {
+  outline: none;
+  border: none;
+  background-color: #0063f7;
+  color: #fff;
+  /*margin: 15px 0;
+  */
+  padding: 5px 20px;
+  transition: 0.4s;
+  /*width: fit-content;
+  */
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid white;
+  font-weight: bold;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+.active {
+  background-color: #0063f7;
+  color: #fff;
+}
+.btn:hover {
+  background-color: white;
+  border: 2px solid #0063f7;
+  color: #0063f7;
+}
+.error {
+  color: red;
+  font-size: 12px;
+  margin: 10px 0;
+}
+/* table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+}
+tr:nth-child(even) {
+  background-color: #f1f7f8;
+}
+th,
+td {
+  border: 1px solid #a0c8cf;
+  padding: 0.75rem;
+  text-align: center;
+}
+th {
+  background-color: #74afb9;
+  color: #fff;
+}
+td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* navlink active */
+/* a.active {
+  background-color: red;
+} */
+.register form {
+  width: 400px;
+  max-width: 100%;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+.register form label {
+  color: #0063f7;
+  margin: 15px 0;
+}
+.register input {
+  padding: 10px 20px;
+  width: 100%;
+  outline: none;
+  border: 2px solid white;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: 0.4s;
+  margin-top: 8px;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.register input:focus {
+  border: 2px solid #0063f7;
+}
+
+.register input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+.register .btn {
+  outline: none;
+  border: none;
+  background-color: #0063f7;
+  color: #fff;
+  margin: 15px auto;
+  padding: 5px 20px;
+  transition: 0.4s;
+  width: fit-content;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid white;
+  font-weight: bold;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.register button:hover {
+  background-color: white;
+  border: 2px solid #0063f7;
+  color: #0063f7;
+}
+.error {
+  color: red;
+  font-size: 12px;
+  margin: 15px 0;
+}
