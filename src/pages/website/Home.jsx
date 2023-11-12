@@ -28,18 +28,12 @@ const Home = () => {
     }
   }, []);
   //show users
-  const ShowProdusts =
-    products.length > 0 ? (
-      products.map((product) => (
-        <div key={product.id}>
-          <td>{product.title}</td>
-          <td>{product.description}</td>
-          <td></td>
-        </div>
-      ))
-    ) : (
-      <p>No Users Found</p>
-    );
+  const ShowProdusts = products.map((product) => (
+    <div className="box" key={product.id}>
+      <h1>{product.title}</h1>
+      <h1>{product.description}</h1>
+    </div>
+  ));
   return (
     <>
       {loading ? (
@@ -50,7 +44,9 @@ const Home = () => {
           <div className="home">
             <div className="container">
               <div className="boxes">
-                <div className="box">{ShowProdusts}</div>
+                <div className="box flex items-center justify-center">
+                  {ShowProdusts}
+                </div>
               </div>
             </div>
           </div>
